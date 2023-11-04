@@ -1,0 +1,24 @@
+.footer-container {
+  width: 100%;
+  background: #ccc;
+  height: 25px;
+}
+
+.footer-text {
+  color: black;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .footer-container {
+    margin-top: 400px;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  .footer-container {
+    margin-top: 650px;
+  }
+}

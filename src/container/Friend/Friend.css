@@ -1,0 +1,131 @@
+.companion-section {
+  padding: 80px 0 80px;
+  background-image: url("../../assets/Home/bg-1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 220px;
+}
+
+.companion-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.85;
+  background-color: #1f2235;
+}
+
+.companion-section .testi-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 50px 50px 50px 0px;
+}
+
+.companion-section .testi-item p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+.companion-section .testi-item p .fa-quote-left {
+  margin-right: 5px;
+  color: tomato;
+}
+.companion-section .testi-item p .fa-quote-right {
+  margin-left: 5px;
+  color: tomato;
+}
+
+.companion-section .testi-comment .stars {
+  margin: 0 0 20px;
+}
+.companion-section .testi-comment .stars li {
+  display: inline-block;
+  margin: 0 1px;
+}
+.companion-section .testi-comment .stars li i {
+  font-size: 13px;
+  color: tomato;
+}
+.companion-section .client-info {
+  text-decoration: none;
+  position: relative;
+  padding-left: 80px;
+  padding-top: 5px;
+  min-height: 60px;
+}
+
+.companion-section .client-info .info {
+  margin-left: 110px;
+  margin-top: -20px;
+}
+.companion-section .client-info img {
+  height: 70px;
+  width: 70px;
+  border: 2px solid transparent;
+  border-color: black;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  position: absolute;
+}
+.companion-section .client-info .info h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 2px;
+}
+.companion-section .client-info .info p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 799px) {
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .testi-item {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .testi-comment {
+    flex: 1;
+  }
+  .client-info {
+    flex: 1;
+    display: flex;
+  }
+  .companion-section .client-info {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 5px;
+    min-height: 60px;
+  }
+  .companion-section .client-info img {
+    height: 100%;
+    width: 150px;
+    border-radius: 4px;
+    border: 0;
+    position: absolute;
+  }
+  .companion-section .client-info .info {
+    margin-left: 80px;
+    margin-top: 14px;
+  }
+  .carousel-inner {
+    max-width: 710px;
+    margin: 0 auto;
+  }
+}
